@@ -1,0 +1,68 @@
+ :root {
+  color-scheme: dark;
+  background: #060208;
+  font-family: Arial, Helvetica, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  min-width: 280px;
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  min-height: 100svh;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at 50% 48%, rgb(68 7 26 / 22%), transparent 58%),
+    #060208;
+}
+
+.stage {
+  display: flex;
+  min-height: 100vh;
+  min-height: 100svh;
+  align-items: center;
+  justify-content: center;
+  padding: 2vmin;
+}
+
+.heart-canvas {
+  display: block;
+  width: min(94vw, 94vh, 760px);
+  width: min(94vw, 94svh, 760px);
+  height: auto;
+  aspect-ratio: 1;
+  overflow: hidden;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.noscript-note {
+  position: fixed;
+  inset-inline: 1rem;
+  bottom: 1rem;
+  margin: 0;
+  color: #f2c5cf;
+  font-size: 0.9rem;
+  text-align: center;
+}
